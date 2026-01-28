@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     children: [
       { path: 'home', element: <Navigate to={"/"} /> },
       { index: true, element: <Home /> },
-      // { path: 'article', element: <Article/> },
+      { path: 'article', element: <Article/> },
       { path: 'blog', element: <Blog /> },
       ...posts.map(post => ({
         path: `/article/${post.slug}`,
